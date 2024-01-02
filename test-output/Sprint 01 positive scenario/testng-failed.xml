@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sprint 01 positive scenario]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value=""/>
+  <test thread-count="5" name="Add items to cart (failed)">
+    <classes>
+      <class name="testcase.TC02_CreateOrder">
+        <methods>
+          <include name="addProductsToCart"/>
+          <include name="tearDown"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- testcase.TC02_CreateOrder -->
+    </classes>
+  </test> <!-- Add items to cart (failed) -->
+</suite> <!-- Failed suite [Sprint 01 positive scenario] -->

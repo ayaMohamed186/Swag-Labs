@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sprint 01 positive scenario">
+
+    <parameter name="browser" value=""/>
+
+    <test name="check login to swagLabs with valid data ">
+        <classes>
+            <class name="testcase.TC01_Login">
+                <methods>
+                    <include name="loginWithRegisteredUser_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Add items to cart ">
+        <classes>
+            <class name="testcase.TC02_CreateOrder">
+                <methods>
+                    <include name="createOrderWithAllProducts"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Logout system ">
+        <classes>
+            <class name="testcase.TC03_Logout">
+                <methods>
+                    <include name="logoutSystem"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="sortProductsFromLowToHigh ">
+        <classes>
+            <class name="testcase.TC04_SortProduct">
+                <methods>
+                    <include name="sortProductsFromLowToHigh"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
