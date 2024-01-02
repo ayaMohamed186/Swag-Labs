@@ -27,9 +27,6 @@ public class TC01_Login extends TestBase{
         SoftAssert softAssertObj = new SoftAssert(); // soft assert
         softAssertObj.assertTrue(new P01_LoginPage(driver).validateIfLoginSuccess());
         softAssertObj.assertAll();
-
-
-
     }
 
 }
